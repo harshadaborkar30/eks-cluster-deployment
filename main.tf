@@ -6,7 +6,7 @@ data "aws_subnets" "available-subnets"{
 }
 
 resource "aws_eks_cluster" "project-cluster" {
-  name     = "project-cluster-1"
+  name     = "project-cluster"
   role_arn = aws_iam_role.example.arn
 
   vpc_config {
